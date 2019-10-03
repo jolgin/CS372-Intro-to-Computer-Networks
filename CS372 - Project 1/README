@@ -1,0 +1,34 @@
+This program implements a simple chat program. One instance will run and act as the server, implemented in java. The other instance, the client, will be implemented in c. For a more specific and thorough explanation of the project's details, see the Project1.pdf in this repository.
+
+
+
+
+Following are the instructions for successfully executing and running my chatclient.c and chatserve.java files. All commands and rules are included in the file simply called makefile. The make commands are for your convenience. There are alternative longer commands if you want to modify port number.
+
+*** NOTE: chatserve must be ran on flip1.engr.oregonstate.edu since its IP address is hardcoded into the chatclient.c file. chatclient can be ran on any other flip server. ***
+
+For chatserve, enter in CTRL C to quit the program. 
+
+"make clean" will remove all files except for source files and the makefile
+
+
+STEP 1: Type in "make run"
+	
+This will compile and create executable files for both chatclient.c and chatserve.java. This can be done on any of the flip servers. 
+
+
+
+
+STEP 2: Type "make runserver"  or java chatserve <port number>
+	
+This must be entered on flip1.engr.oregonstate.edu since the IP address is hardcoded into the program. The port number can be changed if necessary. This will enter and confirm the "java chatserve 1032" command. Alternatively, you can manually enter "java chatserve <port number>" to choose any port number you want. 
+
+
+
+
+
+
+
+STEP 3: Type "make runclient" or ./chatclient flip1.engr.oregonstate.edu <port number>
+
+This can be entered from any flip server. This will run the "./chatclient flip1.engr.oregonstate.edu 1032" command. Alternatively, you can manually enter "./chatclient flip1.engr.oregonstate.edu <port number>" to choose any port number you want. 
